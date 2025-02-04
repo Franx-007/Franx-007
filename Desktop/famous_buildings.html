@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edificios Famosos con Planos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+        .vertical-line {
+            width: 15px;
+            background-color: #4B0082; /* Darker purple */
+            height: 100px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between line and title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <div class="vertical-line"></div>
+            <h1 style="text-align: center;">Edificios Famosos con Planos</h1>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="famous_architects.html">Información de Arquitectos Famosos</a></li>
+                    <li><a href="famous_buildings.html">Edificios Famosos con Planos</a></li>
+                    <li><a href="construction_techniques.html">Comparativa de Técnicas de Construcción</a></li>
+                    <li><a href="structure_calculator.html">Calculador de Estructuras</a></li>
+                    <li><a href="structure_comparison.html">Sistema de Comparación de Estructuras</a></li>
+                    <li><a href="material_costs.html">Costes de Materiales a Nivel Global</a></li>
+                    <li><a href="material_info.html">Información sobre Materiales de Construcción y Decoración</a></li>
+                    <li><a href="architecture_analysis.html">Análisis de Arquitectura</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                <h2>Edificios Famosos</h2>
+                <p>Aquí se presentarán algunos de los edificios más icónicos del mundo.</p>
+                <!-- Add more content about famous buildings -->
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+
+        // Sidebar hover functionality
+        document.addEventListener('mousemove', (event) => {
+            if (event.clientX < 50) { // If cursor is near the left edge
+                sidebar.classList.add('active');
+            } else {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

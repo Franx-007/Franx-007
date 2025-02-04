@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Materiales de Construcción y Decoración</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+        .vertical-line {
+            width: 15px;
+            background-color: #4B0082; /* Darker purple */
+            height: 100px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between line and title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <div class="vertical-line"></div>
+            <h1 style="text-align: center;">Información sobre Materiales de Construcción y Decoración</h1>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="famous_architects.html">Información de Arquitectos Famosos</a></li>
+                    <li><a href="famous_buildings.html">Edificios Famosos con Planos</a></li>
+                    <li><a href="construction_techniques.html">Comparativa de Técnicas de Construcción</a></li>
+                    <li><a href="structure_calculator.html">Calculador de Estructuras</a></li>
+                    <li><a href="structure_comparison.html">Sistema de Comparación de Estructuras</a></li>
+                    <li><a href="material_costs.html">Costes de Materiales a Nivel Global</a></li>
+                    <li><a href="material_info.html">Información sobre Materiales de Construcción y Decoración</a></li>
+                    <li><a href="architecture_analysis.html">Análisis de Arquitectura</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                <h2>Materiales Comunes</h2>
+                <img src="path_to_image.jpg" alt="Construction Materials" />
+                <p>En la construcción y decoración, se utilizan diversos materiales, cada uno con sus características y aplicaciones:</p>
+                <ul>
+                    <li>Madera</li>
+                    <li>Hormigón</li>
+                    <li>Acero</li>
+                    <li>Vidrio</li>
+                    <li>Plásticos</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Comparación de Materiales</h2>
+                <p>Es importante considerar factores como el costo, la facilidad de trabajo y la estética al elegir materiales:</p>
+                <ul>
+                    <li><strong>Madera:</strong> Costo moderado, fácil de trabajar, estética cálida.</li>
+                    <li><strong>Hormigón:</strong> Costo bajo, durabilidad alta, estética industrial.</li>
+                    <li><strong>Acero:</strong> Costo alto, resistencia alta, estética moderna.</li>
+                </ul>
+                <p>Para mayor información sobre materiales, visita <a href="https://www.archdaily.com" target="_blank">ArchDaily</a>.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Información de contacto: info@franx-007.com</p>
+        <p>&copy; 2025 Franx-007 and Black Box</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+
+        // Sidebar hover functionality
+        document.addEventListener('mousemove', (event) => {
+            if (event.clientX < 50) { // If cursor is near the left edge
+                sidebar.classList.add('active');
+            } else {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

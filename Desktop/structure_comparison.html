@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comparación de Estructuras</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+        .vertical-line {
+            width: 15px;
+            background-color: #4B0082; /* Darker purple */
+            height: 100px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between line and title */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <div class="vertical-line"></div>
+            <h1 style="text-align: center;">Sistema de Comparación de Estructuras</h1>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="famous_architects.html">Información de Arquitectos Famosos</a></li>
+                    <li><a href="famous_buildings.html">Edificios Famosos con Planos</a></li>
+                    <li><a href="construction_techniques.html">Comparativa de Técnicas de Construcción</a></li>
+                    <li><a href="structure_calculator.html">Calculador de Estructuras</a></li>
+                    <li><a href="structure_comparison.html">Sistema de Comparación de Estructuras</a></li>
+                    <li><a href="material_costs.html">Costes de Materiales a Nivel Global</a></li>
+                    <li><a href="material_info.html">Información sobre Materiales de Construcción y Decoración</a></li>
+                    <li><a href="architecture_analysis.html">Análisis de Arquitectura</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                <h2>Comparación de Estructuras</h2>
+                <img src="path_to_image.jpg" alt="Structure Comparison" />
+                <p>Aquí se presentarán herramientas para comparar diferentes tipos de estructuras.</p>
+                <!-- Add more content about structure comparisons -->
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Información de contacto: info@franx-007.com</p>
+        <p>&copy; 2025 Franx-007 and Black Box</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+
+        // Sidebar hover functionality
+        document.addEventListener('mousemove', (event) => {
+            if (event.clientX < 50) { // If cursor is near the left edge
+                sidebar.classList.add('active');
+            } else {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
